@@ -44,46 +44,6 @@ a {
   text-decoration: none;
 }
 
-.btn-primary {
-  background-color: #F15A24;
-  color: white;
-  line-height: 19px;
-  font-weight: 700;
-  padding: 16px 32px 16px 32px;
-  transition: background-color 0.3s;
-}
-.btn-primary:hover {
-  background-color: #4E4B66;
-}
-
-.burger {
-  background-color: #F15A24;
-  width: 56px;
-  height: 56px;
-  border-radius: 4px;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.burger:hover {
-  background-color: #4E4B66;
-}
-.burger__line {
-  height: 3px;
-  background-color: white;
-  border-radius: 4px;
-  flex: 0 0 3px;
-}
-@media (min-width: 1024px) {
-  .burger {
-    display: none;
-  }
-}
-
 main {
   max-width: 1280px;
   margin: auto;
@@ -136,6 +96,12 @@ main {
   max-width: 1280px;
   margin: auto;
 }
+@media (max-width: 1023px) {
+  .site-header .top-navigation,
+  .site-header .contact-button {
+    display: none;
+  }
+}
 
 .section__info {
   text-align: center;
@@ -184,4 +150,58 @@ main {
 .top-navigation ul li a:hover {
   color: #F15A24;
   border-bottom: 2px solid #F15A24;
+}
+
+.btn-primary {
+  background-color: #F15A24;
+  color: white;
+  line-height: 19px;
+  font-weight: 700;
+  padding: 16px 32px 16px 32px;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #4E4B66;
+}
+
+.burger {
+  background-color: #F15A24;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.burger:hover {
+  background-color: #4E4B66;
+}
+.burger__line {
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+  flex: 0 0 3px;
+}
+@media (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+}
+
+.contact-button {
+  color: #F15A24;
+  line-height: 19px;
+  font-weight: 700;
+  padding: 16px 48px;
+  border: 1px solid #F15A24;
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+.contact-button:hover {
+  background-color: #F15A24;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
